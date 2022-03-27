@@ -290,7 +290,9 @@ a, p {
 }
 
 .flavors-wrapper-img-article-two {
-  background-image: url("../assets/strawberry.jpg");
+  background-image: url("../assets/peanutbutter-oats.jpg");
+  background-size: cover;
+  background-position: top left;
 }
 
 .flavors-wrapper-img-article-three {
