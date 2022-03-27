@@ -267,9 +267,33 @@ a, p {
   background: #bf4046;
 }
 
+.flavors-wrapper-text .text-wrapper-wrapper {
+  margin: 5rem;
+}
+
+.flavors-wrapper-text_nutrition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .flavors-wrapper-img {
+  background-size: cover;
+  background-position: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.flavors-wrapper-img-article-one {
+  background-image: url("../assets/blueberry-apple.jpg");
+}
+
+.flavors-wrapper-img-article-two {
+  background-image: url("../assets/strawberry.jpg");
+}
+
+.flavors-wrapper-img-article-three {
+  background-image: url("../assets/strawberry.jpg");
 }
 /*# sourceMappingURL=main.css.map */
