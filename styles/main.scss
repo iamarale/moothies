@@ -71,9 +71,27 @@
         &-text{
             flex: 1;
             background: $red-normal;
+            
+            .text-wrapper-wrapper{
+                margin: 5rem;
+            }
+            &_nutrition{
+                display: flex;
+            }
         }
         &-img{
-            flex: 1;
+           background-size: cover;
+           background-position: center;
+           flex: 1;
+        }
+        &-img-article-one{
+            background-image: url('../assets/blueberry-apple.jpg');
+        }
+        &-img-article-two{
+            background-image: url('../assets/strawberry.jpg');
+        }
+        &-img-article-three{
+            background-image: url('../assets/strawberry.jpg');
         }
     }
 }
