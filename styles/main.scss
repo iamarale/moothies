@@ -1,0 +1,79 @@
+@import '_variables';
+@import '_resets';
+
+// navigation header
+.header{
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-logo{
+        color: Red;
+        cursor: default;
+    }
+
+    &-nav-links{
+        display: flex;
+        justify-content: space-between;
+
+        &_li{
+            padding: 0 2rem;
+            a{
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $natural-dark;
+                transition: all .25s ease;
+                display: inline-block;
+            }
+            a:hover{
+                color: $natural-normal;
+                transform: translateY(-.5rem)
+            }
+        }
+    }
+}
+
+// main landing page
+.landing{
+    display: flex;
+    margin-top: 8rem;
+
+    
+    &-text{
+        flex: 2;
+        font-size: 2rem;
+        font-size: 20
+    }
+    .img{
+        background-image: url('../assets/hand-smoothie.jpg');
+        background-position: bottom;
+        // background-size: contain;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 650px;
+        flex: 4;
+        border-radius: .5rem;
+    }
+   
+}
+// why moothies?
+
+
+// our flavors
+.flavors{
+    width: 100%;
+
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+        
+        &-text{
+            flex: 1;
+            background: $red-normal;
+        }
+        &-img{
+            flex: 1;
+        }
+    }
+}

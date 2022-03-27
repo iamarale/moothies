@@ -1,0 +1,29 @@
+// red color
+$red: 357;
+$red-light:  hsla($red, 50%, 75%, 100);
+$red-normal: hsla($red, 50%, 50%, 100);
+$red-darker: hsla($red, 50%, 35%, 100);
+
+// dark blue
+$dark-blue: 245;
+$blue-light:  hsla($dark-blue, 50%, 75%, 100);
+$blue-normal: hsla($dark-blue, 50%, 50%, 100);
+$blue-dark: hsla($dark-blue, 50%, 35%, 100);
+$blue-darker: hsla($dark-blue, 50%, 25%, 100);
+
+// yellow
+$yellow: 60;
+$yellow-light:  hsla($yellow, 50%, 75%, 100%);
+$yellow-normal: hsla($yellow, 50%, 50%, 100%);
+$yellow-darker: hsla($yellow, 50%, 35%, 100%);
+
+// natural
+$natural: 0;
+$natural-lighter: hsl($natural, 0%, 100%);
+$natural-light: hsl($natural, 0%, 75%);
+$natural-normal: hsl($natural, 0%, 50%);
+$natural-dark: hsl($natural, 0%, 15%);
+
+// fonts
+$font-primary: 'Playfair Display', serif;
+$font-secondary: 'Roboto', sans-serif;

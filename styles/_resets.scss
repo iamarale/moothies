@@ -1,0 +1,90 @@
+// Basic resets
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.list-style-none{
+    list-style: none;
+}
+li{
+    color: $yellow-normal;
+}
+.main-btn{
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    background-color: $red-normal;
+    color: $natural-dark ;
+    font-weight: 600;
+    display: inline-block;  
+    transition:  all .25s ease;
+}
+.main-btn:hover{
+    color: $natural-light;
+    background: $red-darker;
+    transform: translateY(-.5rem);
+}
+
+// Sizing
+img{width: 100%;}
+.container-sm{
+    margin: 0 auto;
+    max-width: 60%;
+}
+.container-md{
+    margin: 6rem auto;
+    max-width: 75%;
+}
+.container-l{
+    margin: 0 auto;
+    max-width: 60%;;
+}
+// Margin
+.my-sm{margin:.5rem 0;}
+.my-md{margin: 2rem 0;}
+.my-l{margin: 3.5rem 0;}
+.my-xl{margin: 6rem 0;}
+.ml-sm{margin-left: 1rem}
+.ml-md{margin-left: 1.5rem;}
+.ml-l{margin-left: 3rem;}
+.ml-xl{margin-left: 5rem;}
+
+// padding
+.py-sm{margin:.5rem 0;}
+.py-md{margin: 2rem 0;}
+.py-l{margin: 3.5rem 0;}
+.py-xl{margin: 6rem 0;}
+
+
+// typography
+h1,h2,h3,h4,h5,h6{font-family: $font-primary;}
+a,p{
+    font-family: $font-secondary;
+    text-decoration: none;
+}
+.cta-text{
+    color: $red-normal;
+    display: block;
+    text-transform: uppercase;
+}
+.display-1{
+    font-size: 6rem;
+    color: $blue-darker;
+}
+.text-center{text-align: center;}
+.text-1{font-size: 1.5rem;}
+.text-2{font-size: 2rem;}
+.text-3{font-size: 3rem;}
+.text-4{font-size: 3.5rem;}
+.text-5{font-size: 4rem;}
+.font-light{font-weight: 100;}
+.font-normal{font-weight: 500;}
+.font-bold{font-weight: 600;}
+.font-red{color:$red-normal;}
+.font-yellow{color: $yellow-normal;}
+.font-blue{color: $blue-darker;}
+.font-white{color: $natural-light;}
+

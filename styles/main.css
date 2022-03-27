@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+li {
+  color: #bfbf40;
+}
+
+.main-btn {
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  background-color: #bf4046;
+  color: #262626;
+  font-weight: 600;
+  display: inline-block;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.main-btn:hover {
+  color: #bfbfbf;
+  background: #862d31;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+img {
+  width: 100%;
+}
+
+.container-sm {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.container-md {
+  margin: 6rem auto;
+  max-width: 75%;
+}
+
+.container-l {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.my-sm {
+  margin: .5rem 0;
+}
+
+.my-md {
+  margin: 2rem 0;
+}
+
+.my-l {
+  margin: 3.5rem 0;
+}
+
+.my-xl {
+  margin: 6rem 0;
+}
+
+.ml-sm {
+  margin-left: 1rem;
+}
+
+.ml-md {
+  margin-left: 1.5rem;
+}
+
+.ml-l {
+  margin-left: 3rem;
+}
+
+.ml-xl {
+  margin-left: 5rem;
+}
+
+.py-sm {
+  margin: .5rem 0;
+}
+
+.py-md {
+  margin: 2rem 0;
+}
+
+.py-l {
+  margin: 3.5rem 0;
+}
+
+.py-xl {
+  margin: 6rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+a, p {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.cta-text {
+  color: #bf4046;
+  display: block;
+  text-transform: uppercase;
+}
+
+.display-1 {
+  font-size: 6rem;
+  color: #252060;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-1 {
+  font-size: 1.5rem;
+}
+
+.text-2 {
+  font-size: 2rem;
+}
+
+.text-3 {
+  font-size: 3rem;
+}
+
+.text-4 {
+  font-size: 3.5rem;
+}
+
+.text-5 {
+  font-size: 4rem;
+}
+
+.font-light {
+  font-weight: 100;
+}
+
+.font-normal {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.font-red {
+  color: #bf4046;
+}
+
+.font-yellow {
+  color: #bfbf40;
+}
+
+.font-blue {
+  color: #252060;
+}
+
+.font-white {
+  color: #bfbfbf;
+}
+
+.header {
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-logo {
+  color: Red;
+  cursor: default;
+}
+
+.header-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-nav-links_li {
+  padding: 0 2rem;
+}
+
+.header-nav-links_li a {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #262626;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  display: inline-block;
+}
+
+.header-nav-links_li a:hover {
+  color: gray;
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8rem;
+}
+
+.landing-text {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  font-size: 2rem;
+  font-size: 20;
+}
+
+.landing .img {
+  background-image: url("../assets/hand-smoothie.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  border-radius: .5rem;
+}
+
+.flavors {
+  width: 100%;
+}
+
+.flavors-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flavors-wrapper-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #bf4046;
+}
+
+.flavors-wrapper-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=main.css.map */
