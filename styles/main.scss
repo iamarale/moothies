@@ -1,99 +1,174 @@
-@import '_variables';
-@import '_resets';
+@import "_variables";
+@import "_resets";
+@import "_breakpoints";
 
 // navigation header
-.header{
-    margin: 3rem auto;
+.header {
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-logo {
+    color: Red;
+    cursor: default;
+  }
+
+  &-nav-links {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 
-    &-logo{
-        color: Red;
-        cursor: default;
+    &_li {
+      padding: 0 2rem;
+      a {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $natural-dark;
+        transition: all 0.25s ease;
+        display: inline-block;
+      }
+      a:hover {
+        color: $natural-normal;
+        transform: translateY(-0.5rem);
+      }
     }
-
-    &-nav-links{
-        display: flex;
-        justify-content: space-between;
-
-        &_li{
-            padding: 0 2rem;
-            a{
-                text-transform: uppercase;
-                font-weight: 600;
-                color: $natural-dark;
-                transition: all .25s ease;
-                display: inline-block;
-            }
-            a:hover{
-                color: $natural-normal;
-                transform: translateY(-.5rem)
-            }
-        }
-    }
+  }
 }
 
 // main landing page
-.landing{
-    display: flex;
-    margin-top: 8rem;
+.landing {
+  display: flex;
+  margin-top: 8rem;
 
-    
-    &-text{
-        flex: 2;
-        font-size: 2rem;
-        font-size: 20
-    }
-    .img{
-        background-image: url('../assets/hand-smoothie.jpg');
-        background-position: bottom;
-        // background-size: contain;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 650px;
-        flex: 4;
-        border-radius: .5rem;
-    }
-   
+  &-text {
+    flex: 2;
+    font-size: 2rem;
+    font-size: 20;
+  }
+  .img {
+    background-image: url("../assets/hand-smoothie.jpg");
+    background-position: bottom;
+    // background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    flex: 4;
+    border-radius: 0.5rem;
+  }
 }
 // why moothies?
 
-
 // our flavors
-.flavors{
-    width: 100%;
+.flavors {
+  width: 100%;
+  .article-one {
+    background: $blue-darker;
 
-    &-wrapper{
-        display: flex;
-        justify-content: space-between;
-        
-        &-text{
-            flex: 1;
-            background: $red-normal;
-            
-            .text-wrapper-wrapper{
-                margin: 5rem;
-            }
-            &_nutrition{
-                display: flex;
-            }
-        }
-        &-img{
-           background-size: cover;
-           background-position: center;
-           flex: 1;
-        }
-        &-img-article-one{
-            background-image: url('../assets/blueberry-apple.jpg');
-        }
-        &-img-article-two{
-            background-image: url('../assets/peanutbutter-oats.jpg');
-            background-size: cover;
-            background-position: top left;
-        }
-        &-img-article-three{
-            background-image: url('../assets/strawberry.jpg');
-        }
+    .font-yellow {
+      color: $natural-lighter;
     }
+  }
+  .article-three {
+    background: $blue-darker;
+
+    .font-yellow {
+      color: $natural-lighter;
+    }
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      flex: 1;
+      background: $red-darker;
+
+      .text-wrapper-wrapper {
+        margin: 5rem;
+      }
+      &_nutrition {
+        display: flex;
+      }
+    }
+    &-img {
+      background-size: cover;
+      background-position: center;
+      flex: 1;
+    }
+    &-img-article-one {
+      background-image: url("../assets/blueberry-apple.jpg");
+    }
+    &-img-article-two {
+      background-image: url("../assets/peanutbutter-oats.jpg");
+      background-size: cover;
+      background-position: top left;
+    }
+    &-img-article-three {
+      background-image: url("../assets/strawberry.jpg");
+    }
+  }
+}
+
+@media (max-width: 1004px) {
+  .display-1 {
+    font-size: 3rem;
+  }
+  // header
+  .header {
+    max-width: 90%;
+    &-nav-links {
+      &_li {
+        padding: 0 0.5rem;
+        a {
+          text-transform: uppercase;
+          font-weight: 600;
+          color: $natural-dark;
+          transition: all 0.25s ease;
+          display: inline-block;
+        }
+        a:hover {
+          color: $natural-normal;
+          transform: translateY(-0.5rem);
+        }
+      }
+    }
+  }
+  // main landing page
+  .landing {
+    margin-top: 5rem;
+    &-text {
+      flex: 2;
+      font-size: 1.2rem;
+      text-align: center;
+      &-h1 {
+        font-size: 3rem;
+      }
+    }
+    .img {
+      display: none;
+    }
+  }
+  .flavors {
+    .text-wrapper-wrapper {
+      font-size: 1rem;
+    }
+    .flavors-wrapper-img {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1005px) {
+  .flavors {
+    &-wrapper-img-article-two {
+      background-position: center;
+    }
+  }
+}
+@media (max-width: 1430px) {
+  .landing {
+    .img {
+      display: none;
+    }
+  }
 }
